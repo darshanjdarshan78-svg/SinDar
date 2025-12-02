@@ -1,0 +1,8 @@
+export default function Match() {
+  return (
+    <div className="screen">
+      <h2>Near You (within 10 km)</h2>
+      <p>Matching people will appear here…</p>
+    </div>
+  );
+}

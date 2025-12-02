@@ -1,0 +1,8 @@
+export default function Boost() {
+  return (
+    <div className="screen">
+      <h2>Boost Profile</h2>
+      <button>₹99 Boost Now</button>
+    </div>
+  );
+}

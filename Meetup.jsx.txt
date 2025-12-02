@@ -1,0 +1,12 @@
+export default function Meetup() {
+  return (
+    <div className="screen">
+      <h2>Meetup Suggestions</h2>
+      <ul>
+        <li>Coffee Shop</li>
+        <li>Movie Theatre</li>
+        <li>Study Cafe</li>
+      </ul>
+    </div>
+  );
+}

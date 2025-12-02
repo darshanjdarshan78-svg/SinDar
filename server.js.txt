@@ -1,0 +1,19 @@
+const express = require("express");
+const cors = require("cors");
+const mongoose = require("mongoose");
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+mongoose.connect("mongodb://127.0.0.1:27017/sindarmeet");
+
+app.get("/", (req, res) => {
+  res.send("SinDar MeeT Backend Running ✔️");
+});
+
+app.post("/login", (req, res) => {
+  res.json({ status: "ok", message: "login success" });
+});
+
+app.listen(5000, () => console.log("Backend running on 5000"));

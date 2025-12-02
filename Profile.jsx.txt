@@ -1,0 +1,13 @@
+import React, { useState } from "react";
+
+export default function Profile() {
+  return (
+    <div className="screen">
+      <h2>Your Profile</h2>
+      <input placeholder="Name" />
+      <input placeholder="Age" />
+      <textarea placeholder="Bio"></textarea>
+      <button>Save</button>
+    </div>
+  );
+}

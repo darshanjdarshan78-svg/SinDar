@@ -1,0 +1,23 @@
+import React, { useState } from "react";
+import axios from "axios";
+
+export default function Login() {
+  const [phone, setPhone] = useState("");
+
+  const loginUser = async () => {
+    await axios.post("http://localhost:5000/login", { phone });
+    alert("Login success!");
+  };
+
+  return (
+    <div className="screen">
+      <h2>SinDar MeeT</h2>
+      <input
+        placeholder="Phone Number"
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
+      />
+      <button onClick={loginUser}>Login</button>
+    </div>
+  );
+}

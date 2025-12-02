@@ -1,0 +1,15 @@
+export default function Hobbies() {
+  const list = ["Movies", "Gym", "Travel", "Bike Rides", "Study"];
+
+  return (
+    <div className="screen">
+      <h2>Select Hobbies</h2>
+      {list.map((h) => (
+        <div key={h}>
+          <input type="checkbox" /> {h}
+        </div>
+      ))}
+      <button>Save</button>
+    </div>
+  );
+}
